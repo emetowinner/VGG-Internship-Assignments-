@@ -8,7 +8,7 @@ class WinningBank():
         self.users = {}
         self.user_acc = {}
         self.counter = 0
-        self.banking = True
+        self.banking = True #Ensures the banking process keeps going 
         while self.banking:
             switch = int(input('Welcome Press 1 to USE the system: '))
             if switch == 1:
