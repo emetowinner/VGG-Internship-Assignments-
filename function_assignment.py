@@ -40,4 +40,40 @@ def is_prime(number):
                 print(number, "is a prime number")
     else:
         print(number, "is not a prime number")
-#is_prime(6)
+#is_prime(51)
+
+#For one parameter
+def str_range(string):
+    size = len(string)
+    str_half = size//2
+    mover = str_half - 1
+    holder = []
+    for char in range(str_half):
+        first_char_range = str_half - mover
+        holder.append(first_char_range)
+        holder.append(first_char_range)
+        mover -= 1
+    print(holder)
+str_range('communication')
+
+#For multiple parameter
+def str_range_list(*args):
+    list_holder = []
+    for string in args:
+        size = len(string)
+        str_half = size//2
+        mover = str_half - 1
+        holder = []
+        for char in range(str_half):
+            first_char_range = str_half - mover
+            holder.append(first_char_range)
+            holder.append(first_char_range)
+            mover -= 1
+        list_holder.append(holder)
+    print(list_holder)
+# str_range_list('winner','mike','communication')
+
+scores = [ 70, 80,  90, 100]
+removed_score = scores.pop()
+print(scores)
+print(removed_score )
